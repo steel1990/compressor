@@ -1,4 +1,4 @@
-xtmpl
+easy-compressor
 =====
 easy-compressor is a tool can minify html,js and css very easy.
 
@@ -39,8 +39,8 @@ css and js minify is use [yuicompressor](http://yui.github.io/yuicompressor/),al
         'type': 'js',
         'line-break': 80,
         'o': path.join(__dirname,'./xx.js')
-    }, function (err, code) {
-        console.log(code);
+    }, function (err) {
+        console.log('minify done');
     });
 
     // minify css by string

@@ -1,6 +1,6 @@
 {
     "name": "easy-compressor",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "easy-compressor is a tool can minify html,js and css very easy.",
     "homepage": "https://github.com/steel1990/compressor",
     "author": "lbbsteel@gmail.com",
