@@ -1,0 +1,12 @@
+{
+    "name": "compressor",
+    "version": "0.0.1",
+    "description": "compressor is a tool can compressor html,js and css",
+    "homepage": "https://github.com/steel1990/compressor",
+    "author": "lbbsteel@gmail.com",
+    "main": "./compressor.js",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:steel1990/compressor.git"
+    }
+}
