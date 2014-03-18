@@ -1,7 +1,7 @@
 {
-    "name": "compressor",
+    "name": "easy-compressor",
     "version": "0.0.1",
-    "description": "compressor is a tool can compressor html,js and css",
+    "description": "easy-compressor is a tool can minify html,js and css very easy.",
     "homepage": "https://github.com/steel1990/compressor",
     "author": "lbbsteel@gmail.com",
     "main": "./compressor.js",

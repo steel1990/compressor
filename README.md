@@ -1,6 +1,6 @@
 xtmpl
 =====
-compressor is a tool can minify html,js and css very easy.
+easy-compressor is a tool can minify html,js and css very easy.
 
 html minify is use [htmlcompressor](https://code.google.com/p/htmlcompressor/),all configs are valid.
 
@@ -8,7 +8,7 @@ css and js minify is use [yuicompressor](http://yui.github.io/yuicompressor/),al
 
 ## How To Use
 
-    var compressor = require('compressor');
+    var compressor = require('easy-compressor');
     var path = require('path');
     var fs = require('fs');
 
