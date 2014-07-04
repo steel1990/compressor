@@ -12,6 +12,9 @@ module.exports = function (path, opt, callback) {
         path = tmpPath;
         delete opt.fromString;
     }
+    var executeOption = opt.executeOption || {};
+    delete opt.executeOption;
+
     var args = ['java', '-jar'];
 
     var isUserYui = opt.type && /^js|css$/i.test(opt.type);
@@ -26,5 +29,5 @@ module.exports = function (path, opt, callback) {
 
     args.push(path);
 
-    exec(args.join(' '), callback);
+    exec(args.join(' '), executeOption, callback);
 };
