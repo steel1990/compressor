@@ -6,7 +6,7 @@ var jarPath = path.join(__dirname, './jars/htmlcompressor-1.5.3.jar');
 var yuiJarPath = path.join(__dirname, './jars/yuicompressor.jar');
 var tmpPath = path.join(__dirname, './tmp/tmp');
 
-module.exports = function (path, opt, callback) {
+module.exports = function(path, opt, callback) {
     if (opt.fromString) {
         fs.writeFileSync(tmpPath, path);
         path = tmpPath;
@@ -18,7 +18,7 @@ module.exports = function (path, opt, callback) {
     var args = ['java', '-jar'];
 
     var isUserYui = opt.type && /^js|css$/i.test(opt.type);
-    args.push(isUserYui ? yuiJarPath : jarPath);
+    args.push('"' + (isUserYui ? yuiJarPath : jarPath) + '"');
 
     for (var i in opt) {
         args.push((i.length === 1 ? '-' : '--') + i);
@@ -27,7 +27,7 @@ module.exports = function (path, opt, callback) {
         }
     }
 
-    args.push(path);
+    args.push('"' + path + '"');
 
     exec(args.join(' '), executeOption, callback);
 };
